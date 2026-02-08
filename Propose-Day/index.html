@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Music (Optional, user initiates) -->
+    <audio id="bg-music" loop>
+        <source src="./cele.mpeg" type="audio/mpeg">
+    </audio>
+    <audio id="bg-music1" loop>
+        <source src="./game.mpeg" type="audio/mpeg">
+    </audio>
+
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- UI Overlay -->
+        <div id="ui-layer">
+            <div id="score-board">
+                <span>❤️ Love Meter: </span>
+                <div class="progress-bar">
+                    <div id="love-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>Catch the Love!</h1>
+            <p>Catch enough hearts to reveal a special question...</p>
+            <button id="start-btn" class="btn">Start Game</button>
+        </div>
+
+        <!-- Proposal Modal (Hidden initially) -->
+        <div id="proposal-screen" class="screen hidden">
+            <div class="proposal-content">
+                <h1>Will You Be My Valentine?</h1>
+                <p class="sub-text">You caught my heart! Now I have to ask...</p>
+                <div class="buttons">
+                    <button id="yes-btn" class="btn yes-btn">YES!</button>
+                    <button id="no-btn" class="btn no-btn">No</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Celebration Overlay -->
+        <div id="celebration-screen" class="screen hidden">
+            <div class="celebration-card scrollable-card">
+                <h1>Happy Propose Day! 💍</h1>
+
+                <img 
+                    src="./heart.gif"
+                    alt="Love Celebration"
+                    class="celebration-gif"
+                />
+
+                <div class="quotes">
+                    <div class="quote-card">❤️ “You are my today and all of my tomorrows.”</div>
+                    <div class="quote-card">💕 “Every love story is beautiful, but ours is my favorite.”</div>
+                    <div class="quote-card">💍 “I choose you. And I’ll choose you every single day, every single second.”</div>
+                    <div class="quote-card">💍 “Ek tumhe paakar aur paana kya hai? Main Duniya Chhor du yeh <b>Zamaana</b> kya hai”</div>
+                </div>
+
+                <div class="promise-note">
+                    <h2>💖 A Promise From My Heart</h2>
+
+                    <p>Main aaj <b>Promise Day</b> ke din ye wada karta hoon ki main hamesha <b>tere saath rahunga</b>.</p>
+
+                    <p>Maanta hoon galtiyaan bahut karta hoon, lekin koshish bhi utni hi karta hoon unhe sudharne ki, khud ko badalne ki, aur <b>tumhe hamesha khush rakhne</b> ki.</p>
+
+                    <p>Main saari duniya se lad sakta hoon, har mushkil ka saamna kar sakta hoon, <b>lekin tumse kabhi nahi</b>.</p>
+
+                    <p>Main wada karta hoon ki main hamesha teri <b>nok-jhok</b>, tera <b>bachpana</b>, aur tera har <b>jazbaat</b> sambhalunga.</p>
+
+                    <p>Tum meri zindagi ho, meri aadat, meri sukoon, aur meri dua.</p>
+
+                    <p class="signature">
+                        — Tumhara hamesha,<br>
+                        <b>Kishita 💕</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
