@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #5a2d2d, #2b1212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* General */
+.hidden {
+    display: none !important;
+}
+.active { display: block; }
+
+#app {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Start card */
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    animation: fadeIn 0.6s ease;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    background: #8b4513;
+    color: white;   
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Chocolate slab */
+.chocolate-slab {
+    background: linear-gradient(145deg, #4b2323, #2a1212);
+    padding: 18px;
+    border-radius: 28px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.6),
+                0 25px 60px rgba(0,0,0,0.5);
+}
+
+/* Chocolate pieces */
+.choco-piece {
+    aspect-ratio: 1 / 1;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #5c2e2e, #3a1a1a);
+    box-shadow:
+        inset 4px 4px 6px rgba(255,255,255,0.05),
+        inset -4px -4px 6px rgba(0,0,0,0.6);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.choco-piece::after {
+    content: "❤";
+    font-size: 14px;
+    color: rgba(255,255,255,0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.choco-piece:hover {
+    transform: scale(1.05);
+}
+
+.choco-piece.clicked {
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+/* Popup */
+#popup {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    --offsetY: 0px;
+    transform: translate(-50%, var(--offsetY));
+    background: rgba(255,255,255,0.95);
+    color: #4b2323;
+    padding: 14px 18px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    pointer-events: none;
+    z-index: 999;
+}
+
+/* popup visible */
+.popup-show {
+    opacity: 1;
+}
+
+/* popup hide animation */
+.popup-hide {
+    --offsetY: -50px;
+    opacity: 0;
+}
+
+/* last slice special look */
+.popup-last {
+    box-shadow: 0 0 25px rgba(255, 0, 120, 0.6);
+    font-weight: 600;
+}
+
+
+/* Final */
+.final-gif {
+    width: 220px;
+    margin: 15px 0;
+    border-radius: 15px;
+}
+
+.sign {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* @keyframes popup {
+    0% { opacity: 0; transform: translate(-50%, 20px); }
+    20% { opacity: 1; transform: translate(-50%, 0); }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+} */
+#start-card.hidden {
+    display: none !important;
+}
+
+/* Final card scrollable layout */
+.final-scroll-card {
+    max-height: 85vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Notes container */
+.final-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* Individual note cards */
+.note-card {
+    background: rgba(255, 255, 255, 0.92);
+    color: #4b2323;
+    padding: 14px 16px;
+    border-radius: 16px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Scrollbar (soft & romantic) */
+.final-scroll-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.final-scroll-card::-webkit-scrollbar-thumb {
+    background: #d16b6b;
+    border-radius: 10px;
+}
+
+.final-scroll-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Highlight styles – theme based */
+
+/* Chocolate / sweetness */
+.hl-choco {
+    color: #6f1d1b;
+    font-weight: 600;
+    background: rgba(165, 42, 42, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+/* Love / romance */
+.hl-love {
+    color: #c9184a;
+    font-weight: 600;
+}
+
+/* You / partner */
+.hl-you {
+    color: #8a1c7c;
+    font-weight: 600;
+}
+
+/* Feelings / emotions */
+.hl-feel {
+    color: #a4133c;
+    font-style: italic;
+}
+
+/* Life / togetherness */
+.hl-life {
+    color: #5a189a;
+    font-weight: 500;
+}
+/* Smooth slide-up fade */
+.slide-up-out {
+    animation: slideUpFade 0.6s ease forwards;
+}
+
+@keyframes slideUpFade {
+    to {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+}
+
+/* Progress indicator */
+#progress {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    background: rgba(0,0,0,0.35);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(6px);
+    display: none;
+}
+#emoji-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#final-card {
+    position: relative;
+    z-index: 2;
+}
+
+/* Emoji burst container */
+#emoji-burst {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/* Individual emojis */
+#emoji-burst span {
+    position: absolute;
+    bottom: 30%;
+    font-size: 28px;
+    animation: burstUp 1.4s ease-out forwards;
+}
+
+@keyframes burstUp {
+    0% {
+        transform: translateY(0) scale(0.6);
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120px) scale(1.2);
+        opacity: 0;
+    }
+}

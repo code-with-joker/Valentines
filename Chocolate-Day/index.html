@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chocolate Day 🍫</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <!-- START CARD -->
+    <div id="start-card" class="card active">
+        <h1>🍫 Happy Chocolate Day</h1>
+        <p>Tap to unwrap something sweet 💝</p>
+        <button id="startBtn">Tap to Open</button>
+    </div>
+
+    <div id="progress">0%</div>
+
+
+    <!-- CHOCOLATE SLAB -->
+    <div id="chocolate-box" class="hidden">
+        <div class="chocolate-slab">
+            <!-- 12 chocolate slices -->
+            <div class="choco-piece" data-msg="You are my sweetest addiction 🤎"></div>
+            <div class="choco-piece" data-msg="Life melts better with you 🍫❤️"></div>
+            <div class="choco-piece" data-msg="Every bite reminds me of you 💕"></div>
+            <div class="choco-piece" data-msg="You complete my sweetness 💖"></div>
+            <div class="choco-piece" data-msg="Chocolate + You = Happiness 😘"></div>
+            <div class="choco-piece" data-msg="You are my favorite flavour 💝"></div>
+            <div class="choco-piece" data-msg="My heart melts for you 🤍"></div>
+            <div class="choco-piece" data-msg="With you, everything tastes better 🍫"></div>
+            <div class="choco-piece" data-msg="You are my forever treat 🥰"></div>
+            <div class="choco-piece" data-msg="Sweet moments, sweeter you 💌"></div>
+            <div class="choco-piece" data-msg="I choose you every time 💍"></div>
+            <div class="choco-piece" data-msg="You are my last bite 💕"></div>
+        </div>
+    </div>
+
+    <!-- POPUP -->
+    <div id="popup" class="hidden"></div>
+
+    <!-- FINAL CARD -->
+    <div id="final-card" class="card hidden final-scroll-card">
+        <h1>💝 For You</h1>
+
+        <img src="bugu.gif" class="final-gif">
+
+        <div class="final-notes">
+            <div class="note-card">
+                🍫 Har <span class="hl-choco">chocolate</span> ke saath ek 
+                <span class="hl-feel">ehsaas</span> tha,  
+                aur har ehsaas <span class="hl-you">tum</span> tak hi 
+                <span class="hl-love">laaya</span>.
+            </div>
+
+            <div class="note-card">
+                💕 Tum meri <span class="hl-you">aadat</span> ho,  
+                meri <span class="hl-feel">sukoon</span> ho,  
+                aur meri <span class="hl-life">zindagi</span> ka 
+                <span class="hl-choco">sabse meetha hissa</span> ho.
+            </div>
+
+            <div class="note-card">
+                💖 <span class="hl-you">Aapke</span> <span class="hl-feel">laboo</span> par bhi lagi hogi,  
+                to hum <span class="hl-choco">chocolate</span> ke saath  
+                <span class="hl-love">aapke hothon</span> ko bhi  
+                <span class="hl-you">apna</span> bana lenge.
+            </div>
+
+            <div class="note-card">
+                💌 <span class="hl-you">Tumhare</span> saath har 
+                <span class="hl-life">din</span>,  
+                ek naya <span class="hl-feel">reason</span> deta hai  
+                tumse aur zyada <span class="hl-love">pyaar</span> karne ka.
+            </div>
+        </div>
+
+
+        <p class="sign">— apka budhu bandar 🐒❤️</p>
+    </div>
+
+
+</div>
+
+<!-- <audio id="unwrap-sound" src=""></audio> -->
+<audio id="slice-sound" loop>
+    <source src="./candy.mpeg" type="audio/mpeg">
+</audio>
+<audio id="final-music" src="cele.mpeg" loop></audio>
+
+
+<script src="script.js"></script>
+</body>
+</html>
