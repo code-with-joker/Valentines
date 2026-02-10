@@ -15,6 +15,17 @@ valentine_projects-propose_day-main
 │  ├─ index.html
 │  ├─ script.js
 │  └─ style.css
-└─ README.md
+├─ README.md
+└─ Teddy-Day
+   ├─ cele.mpeg
+   ├─ gifs
+   │  ├─ teddy1.gif
+   │  ├─ teddy2.gif
+   │  ├─ teddy3.gif
+   │  └─ teddy4.gif
+   ├─ index.html
+   ├─ script.js
+   ├─ style.css
+   └─ teddy.mp3
 
 ```
