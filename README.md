@@ -1,60 +1,89 @@
+💖 Valentines Interactive Collection
+=====================================
 
-```
-valentine_projects-propose_day-main
-├─ Chocolate-Day
-│  ├─ bugu.gif
-│  ├─ candy.mpeg
-│  ├─ cele.mpeg
-│  ├─ index.html
-│  ├─ script.js
-│  └─ style.css
-├─ Promise-Day
-│  ├─ final-song.aac
-│  ├─ game-song.aac
-│  ├─ heart.gif
-│  ├─ index.html
-│  ├─ script.js
-│  ├─ style.css
-│  └─ teddy1.gif
-├─ Propose-Day
-│  ├─ cele.mpeg
-│  ├─ game.mpeg
-│  ├─ heart.gif
-│  ├─ index.html
-│  ├─ script.js
-│  └─ style.css
-├─ README.md
-└─ Teddy-Day
-   ├─ cele.mpeg
-   ├─ gifs
-   │  ├─ teddy1.gif
-   │  ├─ teddy2.gif
-   │  ├─ teddy3.gif
-   │  └─ teddy4.gif
-   ├─ index.html
-   ├─ script.js
-   ├─ style.css
-   └─ teddy.mp3
+A beautifully crafted collection of interactive romantic mini web experiences 
+built using **HTML, CSS, and Vanilla JavaScript**.  
+Each day features its own theme, animations, music system, and emotional storytelling.
 
-```
-
-# 💖 Valentines Projects
-
-Interactive romantic mini websites created with pure HTML, CSS & JS.
+Valentines  
+├── Chocolate-Day  
+├── Propose-Day  
+├── Promise-Day  
+├── Teddy-Day  
+└── README.md  
 
 ---
 
-## 🌹 Propose Day
-Romantic love catching game with proposal reveal and celebration screen.
+🌹 Propose Day
+--------------
 
-## 💛 Promise Day
-Interactive promise puzzle game with:
-- Love progress bar
-- SweetAlert2 popups
-- One-time confetti burst + slow rain
-- Dual background music system
-- Romantic final promise card
+Romantic love catching game where users collect falling hearts  
+to unlock a surprise proposal moment.
+
+✨ Features
+
+- ❤️ Love Meter Progress System  
+- 💬 YES / NO Proposal Interaction  
+- 😂 Moving "No" Button for Fun Effect  
+- 🎊 Celebration Confetti Animation  
+- 🎵 Dual Background Music (Game + Celebration)  
+- 💌 Scrollable Romantic Final Card  
+
+🔗 Live Demo:  
+https://code-with-joker.github.io/Valentines/Propose-Day/
 
 ---
 
-Made with ❤️ by Kishan Kumar
+💛 Promise Day
+--------------
+
+Interactive promise puzzle game where users complete emotional promises  
+to unlock a heartfelt final letter.
+
+✨ Features
+
+- 🧩 Romantic Promise Puzzle Game  
+- 📊 Progress Bar System  
+- 💬 SweetAlert2 Stylish Popups  
+- 💥 One-Time Confetti Burst + Slow Rain Effect  
+- 🎵 Independent Dual Song System (.aac support)  
+- 💌 Scrollable Final Promise Card  
+- ✨ Emoji Glow Background Animation  
+
+---
+
+🍫 Chocolate Day
+----------------
+
+Interactive chocolate slice experience revealing romantic messages  
+with sound effects and animated popups.
+
+✨ Features
+
+- 🍫 Click-to-Reveal Chocolate Slices  
+- 💬 Slide-Up Popup Messages  
+- 📊 Top Progress Indicator  
+- 🎵 Unwrap Sound with Volume Fade Control  
+- 💥 Final Emoji Burst Animation  
+
+---
+
+🧸 Teddy Day
+------------
+
+Cute multi-screen romantic experience with animated notes,  
+GIF transitions, and emotional storytelling.
+
+✨ Features
+
+- 🎀 Animated Landing Popup  
+- 🎞 Dreamy Screen Transitions  
+- 🧸 Dynamic GIF Message Cards  
+- 💖 Romantic Note Reveal System  
+- ✨ Emoji Falling Background Effects  
+
+---
+
+📁 Project Structure
+--------------------
+
