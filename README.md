@@ -8,6 +8,14 @@ valentine_projects-propose_day-main
 │  ├─ index.html
 │  ├─ script.js
 │  └─ style.css
+├─ Promise-Day
+│  ├─ final-song.aac
+│  ├─ game-song.aac
+│  ├─ heart.gif
+│  ├─ index.html
+│  ├─ script.js
+│  ├─ style.css
+│  └─ teddy1.gif
 ├─ Propose-Day
 │  ├─ cele.mpeg
 │  ├─ game.mpeg
@@ -29,3 +37,24 @@ valentine_projects-propose_day-main
    └─ teddy.mp3
 
 ```
+
+# 💖 Valentines Projects
+
+Interactive romantic mini websites created with pure HTML, CSS & JS.
+
+---
+
+## 🌹 Propose Day
+Romantic love catching game with proposal reveal and celebration screen.
+
+## 💛 Promise Day
+Interactive promise puzzle game with:
+- Love progress bar
+- SweetAlert2 popups
+- One-time confetti burst + slow rain
+- Dual background music system
+- Romantic final promise card
+
+---
+
+Made with ❤️ by Kishan Kumar
