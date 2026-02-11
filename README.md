@@ -50,6 +50,9 @@ to unlock a heartfelt final letter.
 - 💌 Scrollable Final Promise Card  
 - ✨ Emoji Glow Background Animation  
 
+🔗 Live Demo:  
+https://code-with-joker.github.io/Valentines/Promise-Day/
+
 ---
 
 🍫 Chocolate Day
@@ -66,6 +69,9 @@ with sound effects and animated popups.
 - 🎵 Unwrap Sound with Volume Fade Control  
 - 💥 Final Emoji Burst Animation  
 
+🔗 Live Demo:  
+https://code-with-joker.github.io/Valentines/Chocolate-Day/
+
 ---
 
 🧸 Teddy Day
@@ -81,6 +87,9 @@ GIF transitions, and emotional storytelling.
 - 🧸 Dynamic GIF Message Cards  
 - 💖 Romantic Note Reveal System  
 - ✨ Emoji Falling Background Effects  
+
+🔗 Live Demo:  
+https://code-with-joker.github.io/Valentines/Teddy-Day/
 
 ---
 
