@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app-container">
+
+    <!-- START SCREEN -->
+    <div id="start-screen" class="screen active">
+        <h1 class="start-title">💛Happy Promise Day! 💛</h1>
+        <p class="start-sub">Let’s complete the promises together…</p>
+        <button id="start-btn" class="btn">Start Promise Game</button>
+    </div>
+
+
+    <!-- PROMISE PUZZLE GAME -->
+    <div id="promiseGame" class="screen hidden">
+
+        <div class="promise-card">
+
+            <h1 class="game-heading">💛 Promise Challenge 💛</h1>
+
+            <p class="game-note">
+                Let’s see kitna saccha promise karta hai mera budhu bandar 😌✨
+            </p>
+
+            <h2 id="promiseText"></h2>
+
+            <div id="options" class="options"></div>
+
+            <div class="progress-wrap">
+                <div id="gameProgress" class="progress-bar"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FINAL PROMISE SCREEN -->
+    <div id="promiseFinal" class="screen hidden">
+        <div class="celebration-card scrollable-card">
+
+            <h1>💛 Happy Promise Day! 💛</h1>
+
+            <img 
+                src="./teddy1.gif"
+                alt="Promise Celebration"
+                class="celebration-gif"
+            />
+
+            <div class="quotes">
+
+                <div class="quote-card">
+                    💛 <span class="highlight">“A real promise</span> is not made with words, 
+                    but with <span class="highlight">actions.”</span>
+                </div>
+
+                <div class="quote-card">
+                    🤝 “I promise to <span class="highlight">stay</span> — even when days are 
+                    <span class="highlight">tough.</span>”
+                </div>
+
+                <div class="quote-card">
+                    ✨ “Not <span class="highlight">perfect</span>, but always 
+                    <span class="highlight">trying for you.</span>”
+                </div>
+
+                <div class="quote-card">
+                    💍 “With you, <span class="highlight">forever</span> doesn’t scare me.”
+                </div>
+
+                <!-- 🌸 NEW Romantic Promise -->
+                <div class="quote-card">
+                    💛 Har <span class="highlight">mushkil mein haath</span> tumhara dharna hai,  
+                    tere <span class="highlight">maathe pe kumkum</span> bharna hai.<br/>
+                    🤍 Kab tum shaadi ke jode mein aaogi,  
+                    tumse <span class="highlight">7 janmon ka wada</span> karna hai. 💍
+
+                </div>
+
+                <!-- <div class="quote-card">
+                    🤍 Kab tum shaadi ke jode mein aaogi,  
+                    tumse <span class="highlight">7 janmon ka wada</span> karna hai. 💍
+                </div> -->
+
+            </div>
+
+
+            <!-- SAME PROMISE SECTION STYLE -->
+            <div class="promise-note">
+
+                <h2>💖 A Promise From My Heart</h2>
+
+                <p>Main aaj <b>Promise Day</b> ke din ye wada karta hoon ki main hamesha <b>tere saath rahunga</b>.</p>
+
+                <p>Maanta hoon galtiyaan hoti hain, lekin main hamesha koshish karunga ki <b>tumhe khush rakhun</b> aur tumhe kabhi akela mehsoos na hone doon.</p>
+
+                <p>Main wada karta hoon ki main tumhara <b>respect</b>, tumhari <b>feelings</b> aur tumhare <b>sapne</b> hamesha samjhoon aur support karoon.</p>
+
+                <p>Main saath chalne ka promise karta hoon — sirf aaj nahi, balki har kal mein.</p>
+
+                <p class="signature">
+                    — Tumhara hamesha,<br>
+                    <b>Budhu Bandar 💛</b>
+                </p>
+
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+</div>
+<canvas id="confettiCanvas"></canvas>
+
+
+<audio id="gameSong" loop>
+    <source src="./game-song.aac" type="audio/aac">
+</audio>
+
+<audio id="finalSong" loop>
+    <source src="./final-song.aac" type="audio/aac">
+</audio>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+
+
+</html>
