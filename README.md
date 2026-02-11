@@ -96,3 +96,17 @@ https://code-with-joker.github.io/Valentines/Teddy-Day/
 📁 Project Structure
 --------------------
 
+valentine_projects-propose_day-main
+├─ Chocolate-Day
+├─ Promise-Day
+├─ Propose-Day
+├─ Teddy-Day
+└─ README.md
+
+---
+
+Built with ❤️ using pure frontend technologies.
+
+Made with 💕 by **Kishan Kumar**
+
+---
